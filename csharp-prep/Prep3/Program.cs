@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         Random randomGenerator = new Random();
-        int magic = randomGenerator.Next(1, 100);34
+        int magic = randomGenerator.Next(1, 100);
 
         int number = 0;
 
