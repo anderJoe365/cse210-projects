@@ -39,7 +39,7 @@ public class Journal
 
     public void LoadFromFile(string file)
     { 
-        Console.WriteLine("Get it Gurl");
+        
         string fileName = file;
         Entry entry = new Entry();
         string [] lines = System.IO.File.ReadAllLines(fileName);
