@@ -4,17 +4,19 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Welcome to the Mindfulness program");
-        Console.WriteLine("Please choose and activity from the selection.");
-        Console.WriteLine("1: Breathing Activity");
-        Console.WriteLine("2: Listing Activity");
-        Console.WriteLine("3: Reflection Activity");
-        Console.WriteLine("4: Quit");
-        int userInput = int.Parse(Console.ReadLine());
+        int userInput = 0;
 
 
         while (userInput != 4)
         {
+            Console.WriteLine("Welcome to the Mindfulness program");
+            Console.WriteLine("Please choose and activity from the selection.");
+            Console.WriteLine("1: Breathing Activity");
+            Console.WriteLine("2: Listing Activity");
+            Console.WriteLine("3: Reflection Activity");
+            Console.WriteLine("4: Quit");
+            userInput = int.Parse(Console.ReadLine());
+            
             if (userInput == 1)
             {
                 BreatingActivity breathe = new BreatingActivity();
