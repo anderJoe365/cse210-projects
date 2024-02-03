@@ -7,8 +7,8 @@ public class ListingActivity : Activity
 
     public ListingActivity()
     {
-        _name = "Listening Activity";
-        _description = "";
+        _name = "Listing Activity";
+        _description = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.";
         _duration = 0;
 
         _prompts = new List<string>();
@@ -34,6 +34,7 @@ public class ListingActivity : Activity
 
         while (DateTime.Now < stop)
         {
+            Console.WriteLine(" ");
             response = Console.ReadLine();
             _count ++;
         }

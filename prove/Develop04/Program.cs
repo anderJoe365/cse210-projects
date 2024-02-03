@@ -9,6 +9,7 @@ class Program
 
         while (userInput != 4)
         {
+            Console.WriteLine(" ");
             Console.WriteLine("Welcome to the Mindfulness program");
             Console.WriteLine("Please choose and activity from the selection.");
             Console.WriteLine("1: Breathing Activity");

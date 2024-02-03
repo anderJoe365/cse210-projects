@@ -21,6 +21,7 @@ public class BreatingActivity : Activity
 
         while (DateTime.Now < stop)
         {
+            Console.WriteLine(" ");
             Console.WriteLine("Breathe in...");
             ShowCountDown(4);
             Console.WriteLine("Breathe Out...");

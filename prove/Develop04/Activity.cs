@@ -14,7 +14,8 @@ public class Activity
     }
 
     public void DisplayStartingMessage()
-    {
+    {   
+        Console.WriteLine("");
         Console.WriteLine($"Welcome to the {_name}");
         Console.WriteLine(_description);
         Console.WriteLine("How long would you like to do this activity?");
@@ -34,9 +35,9 @@ public class Activity
         while (DateTime.Now < futureTime)
         {
             Console.Write("+");
-            Thread.Sleep(200);
+            Thread.Sleep(500);
             Console.Write("\b \b");
-            Console.Write("x");
+            Console.Write("-");
         }
     }
 
@@ -46,7 +47,7 @@ public class Activity
         {
             Console.Write(i);
             Thread.Sleep(1000);
-            Console.Write("\b\b \b\b");
+            Console.Write("\b \b");
         }
     }
 }

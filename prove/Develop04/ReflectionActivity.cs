@@ -45,8 +45,9 @@ public class ReflectingActivity : Activity
 
         while (DateTime.Now < stop)
         {
+            Console.WriteLine("");
             DisplayQuestions();
-            Thread.Sleep(1000);
+            response = Console.ReadLine();
         }
 
         DisplayEndingMessage();
